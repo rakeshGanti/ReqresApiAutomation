@@ -80,6 +80,6 @@ public class StepDefinitions extends utils {
 
         resspec = new ResponseSpecBuilder().expectStatusCode(204).build();
         response =res.when().delete("/api/users/"+id).then().spec(resspec).log().all().extract().response();
-
+        System.out.println("The process is completed.");
     }
 }
